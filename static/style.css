@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('https://media.istockphoto.com/id/1442507354/vector/weather-forecast-widget-icon-set.jpg?s=612x612&w=0&k=20&c=Q8pbgqeY7eOgpXKKF71AGQfvOX1-oak9OcavxTCLJgw=') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+input, button {
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 80%;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#weatherResult, #forecastResult {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#forecastResult div {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+} 
