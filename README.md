@@ -3,7 +3,6 @@
 A simple **Weather Dashboard** built with **Flask** (backend) and **HTML, CSS, JavaScript** (frontend). It fetches real-time weather data using the **OpenWeatherMap API** and displays the current weather and a 5-day forecast.
 
 ---
-
 ## 🚀 Features
 
 ✅ Search for any city and get real-time weather.  
