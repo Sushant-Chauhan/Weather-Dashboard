@@ -1,14 +1,18 @@
 from flask import Flask, render_template, request, jsonify
 import requests
-import config
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # app = Flask(__name__)
 app = Flask(__name__, static_folder="static", template_folder="templates")
 
-API_KEY = config.API_KEY
-BASE_URL = config.BASE_URL
+# API_KEY = config.API_KEY
+# BASE_URL = config.BASE_URL
 
-# Route to serve frontend
+API_KEY = os.getenv("API_KEY")
+BASE_URL = os.getenv("BASE_URL")
+
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -26,7 +30,6 @@ def get_weather():
         return jsonify({"error": "City not found"}), 404
     data = response.json()
     return jsonify(data)
-
 
 @app.route("/forecast", methods=["GET"])
 def get_forecast():
