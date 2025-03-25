@@ -4,14 +4,13 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-# app = Flask(__name__)
 app = Flask(__name__, static_folder="static", template_folder="templates")
+ 
+API_KEY = os.getenv("API_KEY")
+BASE_URL = os.getenv("BASE_URL")
 
 # API_KEY = config.API_KEY
 # BASE_URL = config.BASE_URL
-
-API_KEY = os.getenv("API_KEY")
-BASE_URL = os.getenv("BASE_URL")
 
 @app.route("/")
 def home():
